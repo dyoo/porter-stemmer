@@ -1,6 +1,6 @@
 #lang setup/infotab
 (define name "porter-stemmer: a packaging of the porter-stemmer implementation from Programming Praxis")
-(define categories '(devtools))
+(define categories '(datastructures))
 (define can-be-loaded-with 'all)
 (define required-core-version "5.1.1")
 (define version "1.2")
