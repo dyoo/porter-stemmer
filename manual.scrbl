@@ -25,10 +25,13 @@ example:
              (stem "racketeer")
              (stem "singing")]
 
+
+This package provides a single function, @racket[stem]:
+
 @defproc[(stem [a-word string]) string]{
 
-@racket[stem] takes in a single word and returns its stem, according to the
-porter-stemming algorithm.
+@racket[stem] takes in a single word and removes its morphological
+and inflexional endings.
 
 For example:
 @interaction[#:eval my-evaluator
@@ -40,3 +43,14 @@ For example:
 
 Caveat: note that the stemmer does not deal with punctuation.
 }
+
+
+@section{Acknowledgements}
+
+This package is derived from the
+@link["http://programmingpraxis.com/2009/09/08/porter-stemming/"]{Porter
+Stemming} article from
+@link["http://programmingpraxis.com"]{Programming Praxis}.  As with
+the original code, this is under the @link["http://creativecommons.org/licenses/by-nc-sa/3.0/us/"]{Creative Commons
+Attribution-Noncommercial-Share Alike 3.0 United States
+License}.
